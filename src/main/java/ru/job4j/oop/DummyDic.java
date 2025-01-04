@@ -7,7 +7,8 @@ public class DummyDic {
 
     public static void main(String[] args) {
         String word = "car";
-        DummyDic result = new DummyDic();
-        System.out.println(result.engToRus(word));
+        DummyDic dummydyc = new DummyDic();
+        String result = dummydyc.engToRus(word);
+        System.out.println(result);
     }
 }
