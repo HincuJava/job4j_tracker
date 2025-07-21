@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class TrackerTest {
+
     @Test
     public void whenTestFindById() {
         Tracker tracker = new Tracker();
@@ -73,6 +74,7 @@ public class TrackerTest {
         assertThat(tracker.findById(item.getId()).getName()).isEqualTo("Bug");
         assertThat(result).isFalse();
     }
+
     @Test
     public void whenDeleteItemIsSuccessful() {
         Tracker tracker = new Tracker();
